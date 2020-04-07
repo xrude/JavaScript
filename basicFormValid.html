@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function validate() {
+            var email = document.myForm.email.value;
+            var pass = document.myForm.pass.value;
+
+            if (email == "") {
+                alert("EMAIL CANNOT BE EMPTY");
+                document.myForm.email.focus();
+                return false;
+            } else if (pass == "") {
+                alert("PASSWORD CANNOT BE EMPTY");
+                document.myForm.pass.focus();
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="div1" style=" width: 300px;border: 8px solid pink;padding: 50px;margin: 20px; align-items: center;">
+
+        <form name="myForm" action="action.php" onsubmit="return validate()">
+            EMAIL : <input type="email" name="email" /> </br>
+            PASSWORD: <input type="password" name="pass" />
+
+            <input type="submit" value="REGISTER">
+        </form>
+
+
+    </div>
+</body>
+
+</html>

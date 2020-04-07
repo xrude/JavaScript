@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <script>
+         function dateTime()
+         {
+             var d = new Date();
+             var x = d.toLocaleDateString();
+             var y = d.toLocaleTimeString();
+             var z = d.toLocaleString();
+
+             document.getElementById("hello").innerHTML = x ; 
+             document.getElementById("hello1").innerHTML = y + "</br>";
+             document.getElementById("hello2").innerHTML = z + "</br>";
+
+         }
+
+        </script>
+</head>
+
+<body onload="dateTime()">
+    <h3>Current Date:</h3></br>
+    <p id = "hello"></p>
+    <h3>Current Time :</h3></br>
+    <p id = "hello1"></p>
+    <h3>Current Date and Time :</h3></br>
+    <p id = "hello2"></p>
+  
+</body>
+
+</html>

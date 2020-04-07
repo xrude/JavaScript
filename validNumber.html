@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function validate()
+        {
+            var x = document.myform.num.value;
+
+            if(isNaN(x) || x < 1 || x >10 )
+            {
+                alert("Enter a valid number");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="div1" style=" width: 300px;border: 8px solid pink;padding: 50px;margin: 20px; align-items: center;">
+        
+        <form name="myform" action="action.php" onsubmit="return validate()">
+            NUMEBER 1 - 10 : <input name="num" type="number" />
+            <input type="submit" value="SUBMIT" />
+        </form>
+    </div>
+
+</body>
+
+</html>

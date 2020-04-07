@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Alert in JavaScript</title>
+    <script>
+
+        function gradeCal(x, y, z) {
+            var avg = x + y + z;
+
+            if (avg < 70)
+                document.write("</br> Average Grade is : C Grade");
+            if (avg > 70 && avg < 90)
+                document.write("</br> Average Grade is : B Grade");
+            if (avg > 90)
+                document.write("</br> Average Grade is : A Grade");
+        }
+
+
+        var math = parseInt(prompt("Enter the marks in maths : "));
+        var phy = parseInt(prompt("Enter the marks in  Phyiscs : "));
+        var chem = parseInt(prompt("Enter the marks in Chemistry : "));
+
+
+        gradeCal(math, phy, chem);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

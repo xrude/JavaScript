@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            function hey(text , idea)
+            {
+                this.text = text;
+                this.idea = idea;
+                this.addCat = addCat;
+
+            }
+            function addCat(cat)
+            {
+                this.cat = cat;
+            }
+
+            var x = new hey("HELLO" , "HOW ARE YOU");
+            x.addCat("HEYYYYYYYY");
+
+            document.write(x.text + "</br>");
+            document.write(x.idea + "</br>");
+            document.write(x.cat);
+        </script>
+    </head>
+<body>
+
+</body>    
+</html>

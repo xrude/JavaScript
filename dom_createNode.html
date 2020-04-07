@@ -1,0 +1,58 @@
+<!--DOCUMENT OBJECT MODEL-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function handleRemoveNode1()
+        {
+            var parents = document.getElementById("div1");
+            var child = document.getElementById("p1");
+            parents.removeChild(child);
+        }
+        function handleRemoveNode2()
+        {
+            var parents = document.getElementById("div1");
+            var child = document.getElementById("p2");
+            parents.removeChild(child);
+
+        }
+        function handleAddNode1()
+        {
+            var parents = document.getElementById("div1");
+            var child = document.createElement("p");
+            var text = document.createTextNode("Thank you for adding me again");
+            child.append(text);
+            parents.append(child);
+        }    
+        function handleAddNode2()
+        {
+            var parents = document.getElementById("div1");
+            var child = document.createElement("p");
+            var text = document.createTextNode("Thank you for adding me again");
+            child.append(text);
+            parents.append(child);
+
+        }
+    </script>
+</head>
+
+<body>
+    
+    <div id = "div1">
+        <p id = "p1">
+            HEY , If you want to remove me Click the first button :( , and if you removed me mistakenly
+            you can add me again  by clicking add 1
+        </p>
+        <p id = "p2">
+            HELLO , If you want to delete me Click the second button :( , and if you removed me mistakenly
+            you can add me again  by clicking add 2
+        </p>
+    </div>
+    <input type = "button" id = "button1" value="BUTTON 1" onclick="handleRemoveNode1()">
+    <input type = "button" id = "button2" value="BUTTON 2" onclick="handleRemoveNode2()">
+    <input type = "button" id = "button1" value="BUTTON 1" onclick="handleAddNode1()">
+    <input type = "button" id = "button2" value="BUTTON 2" onclick="handleAddNode2()">
+   
+
+</html>

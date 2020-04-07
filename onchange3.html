@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function func(x)
+            {
+                document.body.style.backgroundImage = "url('"+x+"')";
+
+            }
+        </script>
+    </head>
+ <body>
+     <select onchange="func(this.value)">
+         <option value = "">SELECT ANY IMAGE</option>
+         <option value = "image/m.jpg">1 Website</option>
+         <option value = "image/main2.jpg">2 Website</option>
+         <option value = "image/main3.jpg">3 Website</option>
+     </select>
+ </body>   
+</html>

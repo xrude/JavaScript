@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+       function func()
+       {
+           var x = parseInt(document.formm.num1.value);
+           var y = parseInt(document.formm.num2.value);
+           var z = document.formm.result;
+           z.value = x + y;
+
+       }
+    </script>
+</head>
+
+<body>
+
+    <form name="formm">
+        Number 1: <input type="number" name="num1">
+        Number 2: <input type="number" name="num2">
+        Result  : <input type="number" name="result">
+        <input type = "button" value="ADD" onclick="func()">
+    </form>
+
+</body>
+
+</html>

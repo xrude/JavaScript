@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function validate(age)
+        {   
+            try{
+                var age = document.getElementById("age").value;
+                if(age == "")
+                {
+                    throw alert("Age Cannot be EMPTY");
+                }
+                if(age < 0)
+                {
+                    throw "Age cannot be less than zero";
+                }
+            }catch(obj){
+                document.getElementById("errorShow").innerHTML = obj;
+            }    
+        }
+    </script>
+</head>
+
+<body>
+  Age : <input type="text" value="Enter your Age" id = "age">
+  <input type="button" value="SET AGE" onclick="validate()">
+  <p id = "errorShow"></p>
+</body>
+
+</html>

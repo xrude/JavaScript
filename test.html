@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            function func(x)
+            {
+                
+                x.style.color = "red";
+
+            }
+            function up(x)
+            {
+                x.innerHTML = "Hey I am Dinesh Kapri , working in Google";
+                x.style.color = "yellow";
+            }
+            function stops(x)
+            {
+                x.style.fontSize = "40px";
+                x.stop();
+                x.style.backgroundColor = "green";
+            }
+        </script>
+    </head>
+
+<body>
+
+    <marquee onmouseover="stops(this)" onmouseout="start()">You are currently watching www.dineshkapri.com</marquee>
+    
+    <p onmousedown="func(this)" onmouseup = "up(this)" scrollamount = "20">Hey , I am Dinesh Kapri. Currently I am studing in G L Bajaj
+         Institute of Technology and Management</p>
+   
+</body>    
+</html>

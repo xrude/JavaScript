@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function func(x)
+            {
+                x.style.color = "red";
+                x.innerHTML = "HEY";
+            }
+            function funcs(x)
+            {
+                x.style.color = "green";
+                x.innerHTML = " OK";
+            }
+            
+        </script>
+    </head>
+
+<body>
+    
+    <marquee onmouseover=func(this) onmouseout="funcs(this)" >MOUSE OVER | MOUSE OUT</marquee>
+</body>    
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function validate()
+        {
+            var value = false;
+
+            if(document.getElementById("check1").checked)
+            {
+                value =true;
+            }
+            else if(document.getElementById("check2").checked)
+            {
+                value =true;
+            }
+            else if(document.getElementById("check3").checked)
+            {
+                value =true;
+            }
+            else if(document.getElementById("check4").checked)
+            {
+                value =true;
+            }
+            else{
+                value = false;
+            }
+
+            if(value = false)
+            {   
+                alert("UNSUCCESSFUL");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="div1" style=" width: 300px;border: 8px solid pink;padding: 50px;margin: 20px; align-items: center;">
+        
+        <form name="myform" action="action.php" onsubmit="return validate()">
+            <input type="checkbox" id="check1" value="ENGLISH">ENGLISH</br>
+            <input type="checkbox" id="check2" value="HINDI">HINDI</br>
+            <input type="checkbox" id="check3" value="MATHS">MATHS</br>
+            <input type="checkbox" id="check4" value="ECO">ECO</br>
+            <input type="submit" value="SUBMIT" />
+        </form>
+    </div>
+
+</body>
+
+</html>

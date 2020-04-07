@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function focu(x) {
+            x.style.color = "red";
+            x.style.backgroundColor = "green";
+        }
+        function blurr(x) {
+            x.style.color = "black";
+            x.style.backgroundColor = "pink";
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="text" onkeydown="focu(this)" onkeyup="blurr(this)"
+        style="width: 200px; height: 50px; font-size: 20px;">
+</body>
+
+</html>

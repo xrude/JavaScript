@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .a {
+                background-color: aqua;
+                font-size: large;
+            }
+        </style>
+        <script>
+            function add()
+            {
+                var x = parseInt(document.calc.num1.value);
+                var y = parseInt(document.calc.num1.value);
+                var z = document.calc.result;
+                z.value = x + y;
+            }
+            function sub()
+            {
+                var x = parseInt(document.calc.num1.value);
+                var y = parseInt(document.calc.num2.value);
+                var z = document.calc.result;
+                z.value = x - y;
+            }
+            function mul()
+            {
+                var x = parseInt(document.calc.num1.value);
+                var y = parseInt(document.calc.num2.value);
+                var z = document.calc.result;
+                z.value = x*y;
+            }
+            function div()
+            {
+                var x = parseInt(document.calc.num1.value);
+                var y = parseInt(document.calc.num2.value);
+                var z = document.calc.result;
+                z.value = x / y;
+            }
+        </script>
+
+    </head>
+<body>
+
+    <form name="calc">
+        Number 1 : <input type = "Number" name = "num1"></br>
+        Number 2 : <input type = "Number" name = "num2"></br>
+        Result   : <input type = "Number" name = "result"></br></br>
+        <input class="a" type="button" value="Addition" onclick="add()">
+        <input class="a" type="button" value="Subtraction" onclick="sub()">
+        <input class="a" type="button" value="Multiplication" onclick="mul()">
+        <input class="a" type="button" value="Division" onclick="div()">
+    </form>
+</body>    
+</html>

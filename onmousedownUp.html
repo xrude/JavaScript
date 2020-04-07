@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function func(x) {
+            x.style.color = "red";
+            x.innerHTML = "Mouse Down";
+        }
+        function funcs(x) {
+            x.style.color = "green";
+            x.innerHTML = " Mouse Up";
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <p onmousedown="func(this)" onmouseup="funcs(this)">MOUSE OVER | MOUSE OUT</p>
+</body>
+
+</html>

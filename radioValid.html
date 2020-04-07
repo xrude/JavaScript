@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function validate()
+        {
+            var valid = false;
+            var x = document.myform.check;
+
+            for(var i = 0; i < x.length; i++)
+            {
+                if(x[i].checked)
+                {
+                    valid = true;
+                    break;
+                }
+            }
+
+            if(valid)
+            {
+                alert("SUCCESSFUL");
+                return true;
+            }
+            else
+            {
+                alert("UNSUCESSFUL");
+                return false;
+            }
+
+            
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="div1" style=" width: 300px;border: 8px solid pink;padding: 50px;margin: 20px; align-items: center;">
+        
+        <form name="myform" action="action.php" onsubmit="return validate()">
+            <input type="radio" id="check" value="ENGLISH">ENGLISH</br>
+            <input type="radio" id="check" value="HINDI">HINDI</br>
+            <input type="radio" id="check" value="MATHS">MATHS</br>
+            <input type="radio" id="check" value="ECO">ECO</br>
+            <input type="submit" value="SUBMIT" />
+        </form>
+    </div>
+
+</body>
+
+</html>

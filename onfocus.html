@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function focu(x)
+            {
+                x.style.color = "red";
+                x.style.backgroundColor = "green";
+            }
+            function blurr(x)
+            {
+                x.style.color = "black";
+                x.style.backgroundColor = "pink";
+            }
+
+        </script>
+    </head>
+ <body>
+     <input type="text" onfocus="focu(this)" onblur="blurr(this)">
+ </body>   
+</html>
